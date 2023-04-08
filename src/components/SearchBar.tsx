@@ -9,7 +9,7 @@ type SearchProps = {
   handleSubmit: any;
 };
 
-export const MobileSearch: React.FC<SearchProps> = ({
+export const SearchBar: React.FC<SearchProps> = ({
   search,
   setSearch,
   handleSubmit,
@@ -24,8 +24,8 @@ export const MobileSearch: React.FC<SearchProps> = ({
 
   return (
     <>
-      {modal ? <Modal state={handleClick} /> : null}
-      <form className="sm:hidden" onClick={handleSubmit}>
+      {modal ? <Modal state={handleClick} handleSubmit={handleSubmit} /> : null}
+      <form className="sm:hidden" onSubmit={handleSubmit}>
         <div className="max-w-[327px] bg-white dark:bg-dark-blue rounded-[6px] p-[16px] flex items-center justify-between ">
           <div>
             <input

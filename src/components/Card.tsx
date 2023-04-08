@@ -1,15 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   data: any;
 };
 
 export default function Card({ data }: Props) {
+  const navigate = useNavigate();
+
+  const handleClick = (index: number) => {
+    navigate(`job/${index}`);
+  };
   return (
     <>
       <div className="card-container flex justify-center flex-wrap sm:gap-x-[11px] lg:gap-x-[30px] gap-y-[40px] gap-x-[30px] w-full">
         {data.map((card: any) => (
-          <div className="main-card pt-6 relative" key={card.id}>
+          <div
+            onClick={() => handleClick(card.id)}
+            className="main-card cursor-pointer pt-6 relative"
+            key={card.id}
+          >
             <div className="card bg-white dark:bg-dark-blue w-[327px] lg:w-[350px] rounded-[6px] pt-[49px] pb-[36px] pl-[32px] ">
               <figure
                 style={{ backgroundColor: card.logoBackground }}

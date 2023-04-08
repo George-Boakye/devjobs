@@ -4,7 +4,6 @@ import "./Checkbox.css";
 
 export default function Checkbox() {
   const { check, setCheck } = useContext(CheckBoxContext);
-  console.log(check);
 
   return (
     <>
