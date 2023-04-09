@@ -29,7 +29,7 @@ export const SearchBar: React.FC<SearchProps> = ({
         <div className="max-w-[327px] bg-white dark:bg-dark-blue rounded-[6px] p-[16px] flex items-center justify-between ">
           <div>
             <input
-              className="w-[105px] mr-[90px] dark:bg-dark-blue dark:text-white opacity-50 caret-violet text-dark-blue"
+              className=" w-[105px] mr-[90px] dark:bg-dark-blue dark:text-white opacity-50 caret-violet text-dark-blue"
               type="text"
               placeholder="Filter by title..."
               value={search}
@@ -56,7 +56,7 @@ export const SearchBar: React.FC<SearchProps> = ({
               <img src="/assets/search.svg" alt="" />
             </figure>
             <input
-              className="w-[312px] dark:bg-dark-blue dark:text-white sm:max-w-[147px] lg:max-w-[271px] overflow-hidden text-ellipsis whitespace-nowrap outline-0"
+              className="cursor-pointer w-[312px] dark:bg-dark-blue dark:text-white sm:max-w-[147px] lg:max-w-[271px] overflow-hidden text-ellipsis whitespace-nowrap outline-0"
               type="text"
               placeholder="Filter by title, companies, expertise…"
               value={search}
@@ -68,7 +68,7 @@ export const SearchBar: React.FC<SearchProps> = ({
               <img src="/assets/placeholder.svg" alt="" />
             </figure>
             <input
-              className="sm:w-[135px] dark:bg-dark-blue dark:text-white outline-0 overflow-hidden whitespace-nowrap"
+              className="cursor-pointer sm:w-[135px] dark:bg-dark-blue dark:text-white outline-0 overflow-hidden whitespace-nowrap"
               type="text"
               placeholder="Filter by location…"
               value={location}
@@ -84,7 +84,7 @@ export const SearchBar: React.FC<SearchProps> = ({
             </p>
             <button
               type="submit"
-              className="py-4 px-[14px] bg-violet text-white rounded font-bold lg:px-9 lg:py-4"
+              className="hover:bg-[#939BF5] py-4 px-[14px] bg-violet text-white rounded font-bold lg:px-9 lg:py-4"
             >
               search
             </button>

@@ -18,7 +18,7 @@ export default function ({ data }: any) {
 
   function handleSubmit(e: { preventDefault: any }) {
     e.preventDefault();
-    console.log("rrrr");
+
     if (check) {
       const filteredData = jobData.filter((job: any) => {
         return (

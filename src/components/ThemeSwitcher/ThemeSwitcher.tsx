@@ -24,7 +24,7 @@ export default function ThemeSwitcher() {
     <>
       {" "}
       <div
-        className="flex w-[112px] justify-between items-center"
+        className="flex w-[112px] justify-between items-center cursor-pointer"
         onClick={toggleTheme}
       >
         <figure>
