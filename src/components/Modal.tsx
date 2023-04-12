@@ -4,7 +4,7 @@ import { LocationContext } from "../providers";
 
 export default function Modal({ state, handleSubmit }: any) {
   const { location, setLocation } = useContext(LocationContext);
-  console.log(location);
+
   const closeModal = (e: any) => {
     return e.target.matches(".modal") ? state() : null;
   };

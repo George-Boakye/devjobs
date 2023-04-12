@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import { JobPage } from "./pages/JobPage";
 import { DataContext, CheckBoxContext } from "./providers";
@@ -10,6 +9,7 @@ import {
 } from "react-router-dom";
 import jobData from "../data";
 import { useState } from "react";
+
 function App() {
   const [data, setData] = useState(jobData);
   const [check, setCheck] = useState(false);
@@ -26,9 +26,7 @@ function App() {
     <>
       <DataContext.Provider value={{ data, setData }}>
         <CheckBoxContext.Provider value={{ check, setCheck }}>
-          <RouterProvider router={router}>
-            <Navbar />
-          </RouterProvider>
+          <RouterProvider router={router} />
         </CheckBoxContext.Provider>
       </DataContext.Provider>
     </>
