@@ -11,10 +11,10 @@ export default function Modal({ state, handleSubmit }: any) {
   return (
     <>
       <div
-        className="modal w-full h-full bg-[rgba(0,0,0,0.2)] fixed left-0 top-0 z-[1] "
+        className="modal md:hidden w-full h-full bg-[rgba(0,0,0,0.2)] flex justify-center items-center fixed left-0 top-0 z-[1] "
         onClick={closeModal}
       >
-        <div className="w-82 p-6 absolute top-[200px] left-6 modal-content bg-white  dark:bg-dark-blue rounded-[6px]">
+        <div className="w-82 p-6  modal-content bg-white  dark:bg-dark-blue rounded-[6px]">
           <form onSubmit={handleSubmit}>
             <div className="flex pb-[24px] border-gray border-b border-opacity-20">
               <figure className="mr-[16px]">
